@@ -53,6 +53,6 @@ class Hooks {
 	 * @return bool
 	 */
 	private static function shouldHaveDarkMode( Skin $skin ) {
-		return $skin->getUser()->isLoggedIn() && $skin->getSkinName() !== 'minerva';
+		return $skin->getSkinName() !== 'minerva';
 	}
 }
